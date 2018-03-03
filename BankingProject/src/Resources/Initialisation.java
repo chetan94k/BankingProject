@@ -21,7 +21,7 @@ public class Initialisation {
 	{
 		
 		Properties prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\chetan\\eclipse-workspace\\BankingProject\\src\\Resources\\Stored_data.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\chetan\\git\\BankingProject\\BankingProject\\src\\Resources\\Stored_data.properties");
 		prop.load(fis);
 		String geturl=prop.getProperty("url");
 		if(prop.getProperty("browser").equals("firefox"))
