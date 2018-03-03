@@ -6,6 +6,7 @@ import org.testng.ITestResult;
 
 import Resources.Initialisation;
 
+//It is used to call screenshot method on Test Failure
 public class Listener implements ITestListener
 {
 	Initialisation i=new Initialisation();
