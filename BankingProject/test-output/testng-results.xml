@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="69528" started-at="2018-02-07T18:02:01Z" finished-at="2018-02-07T18:03:11Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="55417" started-at="2018-02-07T18:02:01Z" finished-at="2018-02-07T18:02:57Z">
+      <class name="Assignment.SS1">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Assignment.SS1@1efef64]" name="beforetest" is-config="true" duration-ms="11" started-at="2018-02-07T23:32:01Z" finished-at="2018-02-07T23:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="FAIL" signature="Test1()[pri:0, instance:Assignment.SS1@1efef64]" name="Test1" duration-ms="55235" started-at="2018-02-07T23:32:01Z" finished-at="2018-02-07T23:32:56Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Results expected:<Guru99 Bank [Home ]Page> but was:<Guru99 Bank [Manager Home]Page>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Results expected:<Guru99 Bank [Home ]Page> but was:<Guru99 Bank [Manager Home]Page>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at Assignment.SS1.Test1(SS1.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Assignment.SS1@1efef64]" name="AfterTest" is-config="true" duration-ms="132" started-at="2018-02-07T23:32:56Z" finished-at="2018-02-07T23:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- Assignment.SS1 -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="14077" started-at="2018-02-07T18:02:57Z" finished-at="2018-02-07T18:03:11Z">
+      <class name="Assignment.SS2">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Assignment.SS2@25b2fe]" name="beforetest" is-config="true" duration-ms="0" started-at="2018-02-07T23:32:57Z" finished-at="2018-02-07T23:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="FAIL" signature="Test2()[pri:0, instance:Assignment.SS2@25b2fe]" name="Test2" duration-ms="13995" started-at="2018-02-07T23:32:57Z" finished-at="2018-02-07T23:33:11Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[Results expected:<Manger Id[]: mngr115711> but was:<Manger Id[ ]: mngr115711>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: Results expected:<Manger Id[]: mngr115711> but was:<Manger Id[ ]: mngr115711>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at Assignment.SS2.Test2(SS2.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Assignment.SS2@25b2fe]" name="AfterTest" is-config="true" duration-ms="78" started-at="2018-02-07T23:33:11Z" finished-at="2018-02-07T23:33:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- Assignment.SS2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
