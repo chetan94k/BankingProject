@@ -17,6 +17,7 @@ public void beforetest()
 {
 	 driver=null;
 }
+
 //Test case to verify the login section with parameterization using DataProvider Annotation	
 @Test(dataProvider="getdata")
 public void Test3(String username,String password) throws Exception 
