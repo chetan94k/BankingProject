@@ -25,12 +25,14 @@ public void beforetest()
 {
 	 driver=null;
 }
+
 //Test case to verify the login section by fetching data from Excel sheet using POI API
 @Test
 public void Test4() throws Throwable 
 {
 	// initialising the driver by calling the method
 	driver =Base_initialisation();
+	
 	//Creating object of HomepageObjects class with driver as parameter
 	HomepageObjects o1=new HomepageObjects(driver);
 	
@@ -43,17 +45,18 @@ public void Test4() throws Throwable
 	
 	//getting the title of current webpage
 	String hometitle=driver.getTitle();
+	
 	//passing value to username ,password and clicking login button
 	o1.getusername().sendKeys(wc.getStringCellValue());
-     wc=wr.getCell(3);
+    wc=wr.getCell(3);
 	o1.getpwd().sendKeys(wc.getStringCellValue());
     o1.getlogin().click();
     String newtitle=driver.getTitle();
+    
     //validating both titles to check if the credentials provided are correct or not 
 	Assert.assertNotEquals("Results", hometitle, newtitle);	
 
- 
-}
+ }
 
 @AfterTest
  public void AfterTest()

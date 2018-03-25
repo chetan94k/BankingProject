@@ -22,22 +22,27 @@ public void beforetest()
 {
 	 driver=null;
 }
-	
+
+//Test case to validate dynamic text	
 @Test
 public void Test2() throws Throwable 
 {
-	
+	// initialising the driver
 	driver =Base_initialisation();
+	//
 	ChildpageObjects o2=new ChildpageObjects(driver);
 	HomepageObjects o1=new HomepageObjects(driver);
-    Jdbcconnection1 d=new Jdbcconnection1();
+    
+	//fetching login credentials and logging in
+	Jdbcconnection1 d=new Jdbcconnection1();
 	String[] data=d.database();
     o1.getusername().sendKeys(data[0]);
     o1.getpwd().sendKeys(data[1]);
     o1.getlogin().click();
+    
     String string1=o2.getid().getText();
-    System.out.println(string1);
-   //To validate the Dynamic Text
+   
+    //To validate the Dynamic Text
     Assert.assertEquals("Results","Manger Id: "+data[0],string1);
  
 }

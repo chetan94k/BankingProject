@@ -23,15 +23,19 @@ public void Test3(String username,String password) throws Exception
 {
 	// initialising the driver 
 	driver =Base_initialisation();
+	
 	//Creating object of HomepageObjects class with driver as parameter
 	HomepageObjects o1=new HomepageObjects(driver);
+	
 	//getting the title of current webpage
 	String hometitle=driver.getTitle();
+	
 	//passing value to username ,password and clicking login button
     o1.getusername().sendKeys(username);
     o1.getpwd().sendKeys(password);
     o1.getlogin().click();
     String newtitle=driver.getTitle();
+    
     //validating both titles to check if the credentials provided are correct or not 
 	Assert.assertNotEquals("Results", hometitle, newtitle);	
 }
